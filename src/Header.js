@@ -5,7 +5,7 @@ export default class Header extends React.Component {
     render(){
         return(
             <h1 className='headerOne'>
-                Try to change color
+                {this.props.name}
             </h1>
         )
     }

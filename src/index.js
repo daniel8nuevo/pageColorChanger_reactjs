@@ -19,8 +19,8 @@ class ToggleColor extends React.Component {
   }
   render(){
     return(
-      <div>
-        <Header />
+      <div className='mainPage' style={{backgroundColor:this.state.color}}>
+        <Header name='Try to change color!' />
         <Button />
       </div>
     );
