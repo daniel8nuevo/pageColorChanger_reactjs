@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './Header';
+import Button from './Button';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 const lightGreen = '#66ff33';
 const lightBlue = '#66ffff';
 const lightRed = '#ff4d4d';
-const lightYellow = '#ffff4d;
+const lightYellow = '#ffff4d';
 
 class ToggleColor extends React.Component {
   constructor(props){
@@ -14,7 +16,14 @@ class ToggleColor extends React.Component {
     this.state = {
       color: lightGreen
     }
-
+  }
+  render(){
+    return(
+      <div>
+        <Header />
+        <Button />
+      </div>
+    );
   }
 }
 
