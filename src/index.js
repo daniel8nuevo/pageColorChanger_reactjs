@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './Header';
-import Button from './Button';
+import "./Button.css";
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
@@ -16,16 +16,24 @@ class ToggleColor extends React.Component {
     this.state = {
       color: lightGreen
     }
+    this.changeColor = this.changeColor.bind(this);
   }
+    changeColor() {
+      const newColor = this.state.color === lightGreen ? lightBlue : 
+                          this.state.color === lightBlue ? lightRed :
+                             this.state.color === lightRed ? lightYellow : lightGreen;
+      this.setState({color : newColor});
+    }
   render(){
     return(
-      <div className='mainPage' style={{backgroundColor:this.state.color}}>
+      <div className='mainPage' style={{background:this.state.color}}>
         <Header name='Try to change color!' />
-        <Button />
+        <button onClick={this.changeColor} className='buttonChanger'>Change it!</button>
       </div>
     );
   }
 }
+
 
 
 
