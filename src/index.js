@@ -3,8 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-class ToggleColor extends React.Component {
+const lightGreen = '#66ff33';
+const lightBlue = '#66ffff';
+const lightRed = '#ff4d4d';
+const lightYellow = '#ffff4d;
 
+class ToggleColor extends React.Component {
+  constructor(props){
+
+  }
 }
 
 
