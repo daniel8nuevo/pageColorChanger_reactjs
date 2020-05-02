@@ -10,6 +10,10 @@ const lightYellow = '#ffff4d;
 
 class ToggleColor extends React.Component {
   constructor(props){
+    super(props);
+    this.state = {
+      color: lightGreen
+    }
 
   }
 }
